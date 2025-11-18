@@ -47,7 +47,7 @@ Initially the f32 didn't seem to want to work. I couldn't get it to connect to a
     <img src="images/f32_1.jpg" alt="f32" width="300"/>
 </div>
 
-Since I don't have fancy signal testing equipment I relied on some manually testing such as seeing if I can still connect to the device and control the LED. In a clear line of sight test with the f32 placed about 3ft off the ground I was able to connect to the f32 and perform scans/control the LED at roughly 120ft! This can be seen in my highly necessary depiction below.
+Since I don't have fancy signal testing equipment I relied on some manual testing such as seeing if I can still connect to the device and control the LED. In a clear line of sight test with the f32 placed about 3ft off the ground I was able to connect and perform scans/control the LED at roughly 120ft! This can be seen in my highly necessary depiction below.
 
 <div align="center">
     <img src="images/test_1.png" alt="f32" width="650"/>
@@ -97,6 +97,9 @@ After assembly you can use ESP-IDF VSCode extension or Arduino and upload whatev
 ```
 esptool.py -p <PORT> -b 460800 --before default_reset --after hard_reset --chip esp32c3 write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 firmware/bootloader.bin 0x10000 firmware/f32_internal.bin 0x8000 firmware/partition-table.bin 
 ```
+## What's it for?
+Well that's up to you to decide. I started this project for some personal research and also a fun learning experience. I had always wanted a project that used 01005 components ever since I had accidentally ordered some years ago.
+Whatever you choose to use it for, please note that this design intentionally neglects several fundamental components such as proper decoupling capacitors, an antenna matching circuit, USB termination resistors, and likely more. It does function, but it’s intentionally bare.
 
 ## Future Ideas
 - Expose more GPIOs on the sides of the PCB to make it a mountable PCB.
