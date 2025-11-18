@@ -91,7 +91,8 @@ Steps to building one:
 
 After assembly you can use ESP-IDF VSCode extension or Arduino and upload whatever you'd like to the board or you can upload my example application using the steps below.
 
-- Make sure you are in the base directory of this repo and have access to `esptool.py`. 
+- Make sure you are in the base directory of this repo and have access to `esptool.py`.
+- Make sure your `esptool` version is at `v4`+
 - Run the following command replacing `<PORT>` with whichever port the device is connected to i.e. on Windows typically something like `COM5` or on Linux `/dev/ttyACM0`
 ```
 esptool.py -p <PORT> -b 460800 --before default_reset --after hard_reset --chip esp32c3 write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 firmware/bootloader.bin 0x10000 firmware/f32_internal.bin 0x8000 firmware/partition-table.bin 
