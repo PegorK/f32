@@ -7,8 +7,7 @@ The <b>f32</b> is an ultra-compact ESP32 development board designed to mount dir
 <div align="center">
   <img src="images/f32_2.jpg" alt="cover" width="300px"/>
 </div>
-To test the f32 an example application was created that users can interact with. The application turns the f32 into a captive portal so when the it's is powered on it will show up as an open access point that the user can select from available WiFi networks. The user is then automatically sent to the f32's control page where they can interact with some of its basic functionality such as turning on an LED or scanning for surrounding WiFi networks. There's also an "About" page that provides a small overview of the device.<br>
-Below are some screenshots of interacting with the device.
+To test the f32 an example application was created that users can interact with. The application turns the f32 into a captive portal so when the it's is powered on it will show up as an open access point that the user can select from available WiFi networks. The user is then automatically sent to the f32's control page where they can interact with some of its basic functionality such as turning on an LED or scanning for surrounding WiFi networks. There's also an "About" page that provides a small overview of the device. Below are some screenshots of interacting with the device.
 <div align="center">
     <table>
         <tr>
