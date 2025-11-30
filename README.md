@@ -91,7 +91,14 @@ Steps to building one:
  - Gently move the board onto the soldering hotplate or use the rework station to heat the solder back up and watch the components wiggle into place.
  - Repeat with Bottom side.
     - Bottom side must be done using a rework hot air gun, not possible with hotplate.
-    - Place the USB-C receptacle last.
+    - Place the USB-C receptacle last. This part can be soldered using a soldering iron since it's much larger.
+        - Note: A small simple modification needs to be made to the USB-C connector. The connector has two small plastic prongs on the backside that need to be broken off, this can be done using an x-acto blade or flat screwdriver. See image below of the tabs.
+
+<div align="center">
+    <img src="images/usb_c_mod.jpg" alt="usb-c mod" width="300"/>
+    <br> USB-C prongs that need to be broken off.
+</div><br>
+
 - Clean entire board using alcohol and a fine toothbrush.
 
 ## Flashing the f32
